@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Go Green Gala</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <br>
+  <img src="assets/logo.png" id="navLogo" alt="Logo of EverGreenKC">
+  <br>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="aboutUs.html">About Us</a>
+    <a class="active" href="gala.html">Gala</a>
+    <a href="donate.html">Donate</a>
+  </div>
+</head>
+
+<body>
+  <div id="galaBanner">
+    <h1>Annual Go Green Gala</h1>
+    <br>
+    <button id="galaRegisterButton" class="yellowButton"><a href="#registerHeader">Register Now</a></button>
+  </div>
+
+  <div id="galaDetailBoxes">
+    <div id="galaTimeBox" class="galaBox">
+      <h2>When?</h2>
+      <br class="br">
+      <h3>July 28, 2024</h3>
+      <h3>3-7:30pm</h3>
+    </div>
+    <div id="galaLocationBox" class="galaBox">
+      <h2>Where?</h2>
+      <br class="br">
+      <h3>Powell Gardens, Kansas City, Mo</h3>
+      <br>
+      <p>1609 NW US Hwy 50, Kingsville, MO 64061</p>
+    </div>
+    <div id="galaActivityBox" class="galaBox">
+      <h2>What?</h2>
+      <br class="br">
+      <h3 class="galaActivityText">Fun activities to connect with nature and plant trees!</h3>
+      <br>
+      <p class="galaActivityText">Activities include walks, marathons, games, music, food, raffles, and more!</p>
+      <br>
+      <button id="seeScheduleButton" class="yellowButton"><a href="#scheduleHeader">See Schedule</a>
+    </div>
+  </div>
+
+  <h1 class="centerHeader" id="scheduleHeader">What's the Schedule?</h1>
+  <br class="br">
+
+  <table id="schedule">
+    <thead>
+      <tr>
+        <th>Time:</th>
+        <th>Activity/Event:</th>
+        <th>Description:</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Time"><b>2PM</b></td>
+        <td data-label="eventName">Guest Check-In</td>
+        <td data-label="Description">Opening speaker will introduce guests to the gala and provide information about
+          nature scavenger hunt, raffle, auction, and Child's Garden for families.</td>
+      </tr>
+      <tr>
+        <td data-label="Time"><b>3:30PM</b></td>
+        <td data-label="eventName">Walks/Runs Start</td>
+        <td data-label="Description">Guests have the option to particpate in the nature scavenger hunt, 1 mile casual
+          walk, or a 3.25 mile running competition. The scavenger hunt will take place at the Child's Garden, Visitor
+          Center, and Fountain Garden. The walk and running competition will take place at the Bryon Schutz Trail
+          System. Runners can receive a certificate of participation and awards for first, second, and third place.</td>
+      </tr>
+      <tr>
+        <td data-label="Time"><b>4:15PM</b></td>
+        <td data-label="eventName">Walks/Runs/Scavenger Hunt Ends</td>
+        <td data-label="Description">Guests will return for food and performances</td>
+      </tr>
+      <tr>
+        <td data-label="Time"><b>4:30PM</b></td>
+        <td data-label="eventName">Food & Performances Begin</td>
+        <td data-label="Description">Guests may choose a vegan or non-vegan burger for food provided by catering. Guests
+          are responsible for choosing food based on dietary restrictions and allergies. Performances will happen as
+          people eat.</td>
+      </tr>
+      <tr>
+        <td data-label="Time"><b>5:30PM</b></td>
+        <td data-label="eventName">Tree Planting Begins</td>
+        <td data-label="Description">Adults will be placed in groups and plant trees in different garden spots. Children
+          will be craft terrariums. EverGreenKC volunteers will be nearby for assistance.</td>
+      </tr>
+      <tr>
+        <td data-label="Time"><b>7:00PM</b></td>
+        <td data-label="eventName">Raffle, Auction, and Participation Prizes</td>
+        <td data-label="Description">Tree planting will end and raffle, auction, and participation prizes will be
+          awarded.</td>
+      </tr>
+      <tr>
+        <td data-label="Time"><b>7:30PM</b></td>
+        <td data-label="eventName">Closing Keynote</td>
+        <td data-label="Description">Closing speaker will give a speech and end the day.</td>
+      </tr>
+    </tbody>
+  </table>
+  <br class="br">
+
+  <h1 class="centerHeader" id="registerHeader">Register</h1>
+  <div id="galaRegisterForm">
+    <form action="#" method="post" id="form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="attendees">Number of Attendees:</label>
+        <input type="number" id="attendees" name="attendees" min="1" required>
+      </div>
+      <div class="form-group">
+        <label for="meal-preference">Meal Preference:</label>
+        <select id="meal-preference" name="meal-preference" required>
+          <option value="">Select</option>
+          <option value="Vegetarian">Vegan</option>
+          <option value="Non-Vegetarian">Non-Vegan</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="additional-info">Additional Information:</label>
+        <textarea id="additional-info" name="additional-info" rows="4"></textarea>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Register Now">
+      </div>
+    </form>
+  </div>
+  <br class="br">
+  <p id="successMessage"></p>
+  <br class="br">
+
+  <footer>
+    <div id="footerContent">
+      <p>Contact Us & Follow Us on Social Media!<br>
+        <a href="mailto:demo@evergreenkc.com">demo@evergreenkc.com</a>
+      </p>
+      <div class="socialMediaBar">
+        <a href="https://www.instagram.com/"><img src="assets/instagram.png" id="instagram" alt="Instagram Logo"></a>
+        <a href="https://twitter.com/"><img src="assets/twitter_x.png" id="twitter" alt="Twitter Logo"></a>
+        <a href="https://www.facebook.com/"><img src="assets/facebook.png" id="facebook" alt="Facebook Logo"></a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    var form = document.getElementById("form");
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); //Prevents form from autosubmitting
+      var name = document.getElementById("name").value;
+      var attendees = document.getElementById("attendees").value;
+      var meal = document.getElementById("meal-preference").value;
+
+      document.getElementById("successMessage").innerHTML = "Thank you, " + name + " for registering your party of " + attendees + " for the Go Green Gala! We look forward to seeing you there!";
+    });
+  </script>
+
+
+
+</body>
+
+</html>

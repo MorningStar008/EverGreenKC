@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Donate</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <br>
+  <img src="assets/logo.png" id="navLogo" alt="Logo of EverGreenKC">
+  <br>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="aboutUs.html">About Us</a>
+    <a href="gala.html">Gala</a>
+    <a class="active" href="donate.html">Donate</a>
+  </div>
+</head>
+
+<body>
+  <img src="assets/bigTree.jpg" id="bigTree" alt="An image of a very large and tall tree">
+  <div id="donateDiv">
+    <h1 class="topicHeader">Donate to a Sustainable Cause</h1>
+    <br>
+    <div id="donateFormDiv">
+      <form class="donation-form" action="#" method="post" id="donateForm">
+          <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+              <label for="amount">Donation Amount:</label>
+              <input type="number" id="amount" name="amount" min="1" required>
+          </div>
+          <div class="form-group">
+              <input type="submit" value="Donate Now">
+          </div>
+      </form>
+      <br>
+    </div>
+  </div>
+  <br class="br">
+  <p id="successMessage"></p>
+  <br class="br">
+  <script src="script.js"></script>
+
+  <script>
+    var form = document.getElementById("donateForm");
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); //Prevents form from autosubmitting
+      var name = document.getElementById("name").value;
+      var amount = document.getElementById("amount").value;
+
+      document.getElementById("successMessage").innerHTML = "Thank you, " + name + " for donating $" + amount + " to EverGreenKC! We wholeheartedly appreciate it!";
+    });
+  </script>
+  
+</body>
+
+</html>
